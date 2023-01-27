@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+from brain_games.games import calc
 from brain_games import cli
-from brain_games.games import even_odd
 
 
 def main():
     moniker = cli.welcome_user()
-    even_odd.game1(moniker)
+    calc.game2(moniker)
 
 
 if __name__ == '__main__':
