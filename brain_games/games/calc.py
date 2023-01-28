@@ -7,8 +7,7 @@ def game2(moniker):  # Логика игры калькулятор
     print('What is the result of the expression?')
     oper = [operator.add, operator.mul, operator.sub]
     comparison = {operator.add: '+', operator.mul: '*', operator.sub: '-'}
-    i = 0
-    while i < 3:
+    for i in range(3):
         a = random.randint(-99, 99)
         b = random.randint(-99, 99)
         act = random.choice(oper)
@@ -16,9 +15,7 @@ def game2(moniker):  # Логика игры калькулятор
         corr = str(act(a, b))
         pointer = in_out.in_o(question, corr, moniker)  # Вызов функции
 # взаимодействия с пользователем
-        if pointer:
-            i += 1
-        else:
+        if not pointer:
             break
     else:
         in_out.in_o(question, corr, moniker, flag=False)

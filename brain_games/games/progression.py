@@ -4,8 +4,7 @@ import random
 
 def game4(moniker):  # Логика игры Прогрессия
     print('What number is missing in the progression?')
-    i = 0
-    while i < 3:
+    for i in range(3):
         wave = random.randint(-8, 8)  # шаг прогрессии
         start = random.randint(-99, 99)  # стартовое число
         position = random.randint(0, 9)  # спрятанная позиция
@@ -18,9 +17,7 @@ def game4(moniker):  # Логика игры Прогрессия
         question = ' '.join(progr)
         pointer = in_out.in_o(question, corr, moniker)  # Вызов функции
 # взаимодействия с пользователем
-        if pointer:
-            i += 1
-        else:
+        if not pointer:
             break
     else:
         in_out.in_o(question, corr, moniker, flag=False)
