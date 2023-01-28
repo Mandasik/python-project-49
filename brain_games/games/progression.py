@@ -8,7 +8,7 @@ def game4(moniker):  # Логика игры Прогрессия
     while i < 3:
         wave = random.randint(-8, 8)  # шаг прогрессии
         start = random.randint(-99, 99)  # стартовое число
-        position = random.randint(0, 10)  # спрятанная позиция
+        position = random.randint(0, 9)  # спрятанная позиция
         progr = []
         for j in range(10):  # генерация прогрессии
             progr.append(str(start))
