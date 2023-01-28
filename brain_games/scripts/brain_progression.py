@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.games import gcd
 from brain_games import cli
+from brain_games.games import progression
 
 
 def main():
     moniker = cli.welcome_user()
-    gcd.game3(moniker)
+    progression.game4(moniker)
 
 
 if __name__ == '__main__':
