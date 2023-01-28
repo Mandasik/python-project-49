@@ -3,7 +3,7 @@ from brain_games import in_out
 
 
 def list_simple():  # форммирует список простых чисел
-    l_simple = [x for x in range(2, 5000)]
+    l_simple = [x for x in range(2, 3000)]
     for i in l_simple:
         for elem in l_simple[l_simple.index(i) + 1:]:
             if elem % i == 0:
@@ -16,7 +16,7 @@ def game5(moniker):  # Логика игры определить простое
     scroll = list_simple()
     i = 0
     while i < 3:
-        question = str(random.randint(1, 5000))
+        question = str(random.randint(1, 3000))
         if question in scroll:
             corr = 'yes'
         else:
