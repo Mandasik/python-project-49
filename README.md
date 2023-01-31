@@ -5,11 +5,17 @@
 
 Установка производится командой python3 -m pip install --user git+https://github.com/Mandasik/python-project-49
 После установки игры запускаются из любой директории короткими командами, указанными в скобках рядом с описанием игр
+
 Игры:
+
 Калькулятор (brain-calc). Арифметические выражения, которые необходимо вычислить.
+
 Прогрессия (brain-progression). Поиск пропущенных чисел в последовательности чисел.
+
 Определение четного числа (brain-even).
+
 Определение наибольшего общего делителя (brain-gcd).
+
 Определение простого числа (brain-prime).
 [![asciicast](https://asciinema.org/a/554721.svg)](https://asciinema.org/a/554721)
 [![asciicast](https://asciinema.org/a/555057.svg)](https://asciinema.org/a/555057)
