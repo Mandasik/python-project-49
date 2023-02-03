@@ -2,11 +2,11 @@
 [![Actions Status](https://github.com/Mandasik/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Mandasik/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/350d11c4fa9e6c7c5597/maintainability)](https://codeclimate.com/github/Mandasik/python-project-49/maintainability)
 
-#Описание пакета
+# Описание пакета
 
 «Brain-games» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. 
 
-##Описание установки
+## Описание установки
 
 Для установки пакета, находясь в домашней директории, наберите, пожалуйста, в командной строке следующую команду:
 
@@ -14,7 +14,7 @@
 
 [![asciicast](https://asciinema.org/a/557074.svg)](https://asciinema.org/a/557074)
 
-##Описание запуска и процесса игр
+## Описание запуска и процесса игр
 
 1. **Brain-even** - игра предлагает определить чётное ли число. Для запуска наберите, пожалуйста в командной строке `brain-even`
 
