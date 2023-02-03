@@ -1,24 +1,37 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Mandasik/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Mandasik/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/350d11c4fa9e6c7c5597/maintainability)](https://codeclimate.com/github/Mandasik/python-project-49/maintainability)
+
+#Описание пакета
+
 «Brain-games» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. 
 
-Установка производится командой python3 -m pip install --user git+https://github.com/Mandasik/python-project-49
-После установки игры запускаются из любой директории короткими командами, указанными в скобках рядом с описанием игр
+##Описание установки
 
-Игры:
+Для установки пакета, находясь в домашней директории, наберите, пожалуйста, в командной строке следующую команду:
 
-Калькулятор (brain-calc). Арифметические выражения, которые необходимо вычислить.
+`python3 -m pip install --user git+https://github.com/Mandasik/python-project-49`
 
-Прогрессия (brain-progression). Поиск пропущенных чисел в последовательности чисел.
+[![asciicast](https://asciinema.org/a/557074.svg)](https://asciinema.org/a/557074)
 
-Определение четного числа (brain-even).
+##Описание запуска и процесса игр
 
-Определение наибольшего общего делителя (brain-gcd).
+1. **Brain-even** - игра предлагает определить чётное ли число. Для запуска наберите, пожалуйста в командной строке `brain-even`
 
-Определение простого числа (brain-prime).
-[![asciicast](https://asciinema.org/a/554721.svg)](https://asciinema.org/a/554721)
-[![asciicast](https://asciinema.org/a/555057.svg)](https://asciinema.org/a/555057)
-[![asciicast](https://asciinema.org/a/555176.svg)](https://asciinema.org/a/555176)
-[![asciicast](https://asciinema.org/a/555202.svg)](https://asciinema.org/a/555202)
-[![asciicast](https://asciinema.org/a/555255.svg)](https://asciinema.org/a/555255)
+[![asciicast](https://asciinema.org/a/557076.svg)](https://asciinema.org/a/557076)
+
+2. **Brain-calc** - игра предлагает выполнить арифметические действия. Для запуска наберите, пожалуйста в командной строке `brain-calc`
+
+[![asciicast](https://asciinema.org/a/557080.svg)](https://asciinema.org/a/557080)
+
+3. **Brain-gcd** - игра предлагает найти наибольший общий делитель для двух чисел. Для запуска наберите, пожалуйста в командной строке `brain-gcd`
+
+[![asciicast](https://asciinema.org/a/557084.svg)](https://asciinema.org/a/557084)
+
+4. **Brain-progression** - игра предлагает найти пропущенное число в арифметической прогрессии. Для запуска наберите, пожалуйста в командной строке `brain-progression`
+
+[![asciicast](https://asciinema.org/a/557085.svg)](https://asciinema.org/a/557085)
+
+5. **Brain-prime** - игра предлагает определить является ли число простым. Для запуска наберите, пожалуйста в командной строке `brain-prime`
+
+[![asciicast](https://asciinema.org/a/557086.svg)](https://asciinema.org/a/557086)

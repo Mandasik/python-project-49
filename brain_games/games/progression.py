@@ -6,7 +6,7 @@ MAX = 99
 RULES = 'What number is missing in the progression?'
 
 
-def game4():  # Логика игры Прогрессия
+def logics():  # Логика игры Прогрессия
     position = random.randint(0, 9)  # спрятанная позиция
     progr = []
     wave = random.randint(MIN, MAX)  # шаг прогрессии

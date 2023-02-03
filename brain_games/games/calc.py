@@ -7,7 +7,7 @@ MAX = 99
 RULES = 'What is the result of the expression?'
 
 
-def game2():  # Логика игры калькулятор
+def logics():  # Логика игры калькулятор
     comparison = {operator.add: '+', operator.mul: '*', operator.sub: '-'}
     a = random.randint(MIN, MAX)
     b = random.randint(MIN, MAX)

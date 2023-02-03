@@ -1,11 +1,12 @@
 import prompt
+from brain_games import cli
 
 
-def in_o(greetings, game, rules):  # Движок Brain-games
-    moniker = greetings()
-    print(rules)
+def in_o(game):  # Движок Brain-games
+    moniker = cli.welcome_user()
+    print(game.RULES)
     for i in range(3):
-        question, corr = game()  # Вызов функции игры
+        question, corr = game.logics()  # Вызов функции игры
         print(f'Question: {question}')
         ans = prompt.string('Your answer: ')
         if ans == corr:  # Проверка ответа пользователя
