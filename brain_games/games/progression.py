@@ -14,8 +14,9 @@ def generates_progression():
     for j in range(10):
         progr.append(str(start))
         start += wave
+    answer = progr[position]
     progr[position] = '..'
-    return progr, progr[position]
+    return progr, answer
 
 
 def gives_answer_question():
