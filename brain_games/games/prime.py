@@ -16,7 +16,7 @@ def is_simply(question):  # Проверка числа
     return 'yes'
 
 
-def logics():  # Логика игры определить простое число
+def gives_answer_question():
     question = random.randint(MIN, MAX)
-    corr = is_simply(question)
-    return question, corr
+    answer = is_simply(question)
+    return question, answer

@@ -1,19 +1,25 @@
 import prompt
-from brain_games import cli
 
 
-def in_o(game):  # Движок Brain-games
-    moniker = cli.welcome_user()
+def welcome_user():
+    print('Welcome to the Brain Games!')
+    moniker = prompt.string('May I have your name? ')
+    print(f'Hello, {moniker}!')
+    return moniker
+
+
+def game_engine(game):  # Движок Brain-games
+    moniker = welcome_user()
     print(game.RULES)
     for i in range(3):
-        question, corr = game.logics()  # Вызов функции игры
+        question, correct_answer = game.gives_answer_question()  # модуль игры
         print(f'Question: {question}')
-        ans = prompt.string('Your answer: ')
-        if ans == corr:  # Проверка ответа пользователя
+        user_answer = prompt.string('Your answer: ')  # Запрос ответа
+        if user_answer == correct_answer:  # Проверка ответа пользователя
             print('Correct!')
         else:
-            print(f'''"{ans}" is wrong answer ;(. Correct answer was "{corr}".
-Let's try again, {moniker}!''')
+            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was
+ "{correct_answer}". Let's try again, {moniker}!''')
             break
     else:
         print(f'Congratulations, {moniker}!')

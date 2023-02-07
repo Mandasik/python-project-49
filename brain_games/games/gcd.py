@@ -7,9 +7,14 @@ MAX = 1000
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def logics():  # Логика игры НОД
-    a = random.randint(MIN, MAX)
-    b = random.randint(MIN, MAX)
-    question = f'{a} {b}'
-    corr = str(math.gcd(a, b))
-    return question, corr
+def finds_gcd():  # Находит наибольший делитель
+    numeric_a = random.randint(MIN, MAX)
+    numeric_b = random.randint(MIN, MAX)
+    answer = math.gcd(numeric_a, numeric_b)
+    return numeric_a, numeric_b, answer
+
+
+def gives_answer_question():
+    numeric_a, numeric_b, answer = finds_gcd()
+    question = f'{numeric_a} {numeric_b}'
+    return question, str(answer)

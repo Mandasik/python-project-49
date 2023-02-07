@@ -4,7 +4,7 @@ from brain_games import in_out
 
 
 def main():
-    in_out.in_o(prime)
+    in_out.game_engine(prime)
 
 
 if __name__ == '__main__':
