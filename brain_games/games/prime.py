@@ -18,4 +18,4 @@ def is_simply(question):  # Проверка числа
 
 def gives_answer_question():
     question = random.randint(MIN, MAX)
-    return str(question), 'yes' if is_simply() else 'no'
+    return str(question), 'yes' if is_simply(question) else 'no'
