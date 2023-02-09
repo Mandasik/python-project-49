@@ -9,11 +9,11 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_simply(question):  # Проверка числа
     if question % 2 == 0:
-        return False
+        return True
     for i in range(3, round(math.sqrt(question)), 2):
         if question % i == 0:
-            return False
-    return True
+            return True
+    return False
 
 
 def gives_answer_question():
