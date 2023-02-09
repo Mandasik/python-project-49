@@ -8,18 +8,18 @@ RULES = 'What number is missing in the progression?'
 
 def generates_progression():
     position = random.randint(0, 9)  # спрятанная позиция
-    progr = []
+    progression = []
     wave = random.randint(MIN, MAX)  # шаг прогрессии
     start = random.randint(MIN, MAX)  # стартовое число
-    for j in range(10):
-        progr.append(str(start))
+    for j in range(10):  # генерация прогрессии
+        progression.append(start)
         start += wave
-    answer = progr[position]
-    progr[position] = '..'
-    return progr, answer
+    answer = progression[position]  # определение ответа
+    progression[position] = '..'  # сокрытие позиции вопроса
+    return progression, answer
 
 
 def gives_answer_question():
-    progr, answer = generates_progression()
-    question = ' '.join(progr)
-    return question, answer
+    progression, answer = generates_progression()
+    question = ' '.join(progression)
+    return question, str(answer)

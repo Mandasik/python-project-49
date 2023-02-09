@@ -5,14 +5,14 @@ import random
 MIN = -99
 MAX = 99
 RULES = 'What is the result of the expression?'
-COMPARISON = {operator.add: '+', operator.mul: '*', operator.sub: '-'}
 
 
 def performs_arithmetic_operations():
+    comparison = {operator.add: '+', operator.mul: '*', operator.sub: '-'}
     numeric_a = random.randint(MIN, MAX)
     numeric_b = random.randint(MIN, MAX)
-    act = random.choice(list(COMPARISON.keys()))
-    simbol = COMPARISON[act]
+    act = random.choice(list(comparison.keys()))
+    simbol = comparison[act]
     answer = act(numeric_a, numeric_b)
     return numeric_a, numeric_b, simbol, answer
 
