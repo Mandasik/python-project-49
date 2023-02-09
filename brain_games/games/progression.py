@@ -12,7 +12,7 @@ def generates_progression():
     wave = random.randint(MIN, MAX)  # шаг прогрессии
     start = random.randint(MIN, MAX)  # стартовое число
     for j in range(10):  # генерация прогрессии
-        progression.append(start)
+        progression.append(str(start))
         start += wave
     answer = progression[position]  # определение ответа
     progression[position] = '..'  # сокрытие позиции вопроса
