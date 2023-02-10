@@ -8,7 +8,7 @@ RULES = 'What is the result of the expression?'
 COMPARISON = {operator.add: '+', operator.mul: '*', operator.sub: '-'}
 
 
-def performs_arithmetic_operations(numeric_a, numeric_b, act): 
+def performs_arithmetic_operations(numeric_a, numeric_b, act):
     answer = act(numeric_a, numeric_b)
     return answer
 

@@ -13,7 +13,6 @@ def random_generation():
     return hid_position, wave, start
 
 
-
 def generates_progression():
     hid_position, wave, start = random_generation()
     progression = []
