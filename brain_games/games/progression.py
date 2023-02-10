@@ -6,20 +6,27 @@ MAX = 99
 RULES = 'What number is missing in the progression?'
 
 
-def generates_progression():
-    position = random.randint(0, 9)  # спрятанная позиция
-    progression = []
+def random_generation():
+    hid_position = random.randint(0, 9)  # спрятанная позиция
     wave = random.randint(MIN, MAX)  # шаг прогрессии
     start = random.randint(MIN, MAX)  # стартовое число
+    return hid_position, wave, start
+
+
+
+def generates_progression():
+    hid_position, wave, start = random_generation()
+    progression = []
     for j in range(10):  # генерация прогрессии
         progression.append(str(start))
         start += wave
-    answer = progression[position]  # определение ответа
-    progression[position] = '..'  # сокрытие позиции вопроса
-    return progression, answer
+    return progression
 
 
 def gives_answer_question():
-    progression, answer = generates_progression()
+    hid_position, wave, start = random_generation()
+    progression = generates_progression()
+    answer = progression[hid_position]  # определение ответа
+    progression[hid_position] = '..'  # сокрытие позиции вопроса
     question = ' '.join(progression)
     return question, str(answer)
