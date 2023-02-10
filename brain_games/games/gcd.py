@@ -9,7 +9,7 @@ RULES = 'Find the greatest common divisor of given numbers.'
 
 def finds_gcd(numeric_a, numeric_b):  # Находит наибольший делитель
     answer = math.gcd(numeric_a, numeric_b)
-    return numeric_a, numeric_b, answer
+    return answer
 
 
 def gives_answer_question():
