@@ -6,11 +6,11 @@ MAX = 999999999999
 RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def checks_even_odd(number):
+def is_even(number):
     return number % 2 == 0
 
 
 def gives_answer_question():
     question = randint(MIN, MAX)
-    answer = checks_even_odd(question)
-    return question, 'yes' if answer else 'no'
+    answer = 'yes' if is_even(question) else 'no'
+    return question, answer

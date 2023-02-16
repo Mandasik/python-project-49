@@ -1,21 +1,24 @@
 import random
-import math
+from math import sqrt, ceil
 
 
-MIN = 1
-MAX = 5000
+MIN = -100
+MAX = 4000
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_simply(question):  # Проверка числа
-    if question % 2 == 0:
+def is_prime(number):
+    if number % 2 == 0 or number % 3 == 0 or number <= 1:
         return False
-    for i in range(3, round(math.sqrt(question)), 2):
-        if question % i == 0:
+    elif number == 2:
+        return True
+    for i in (divider for divider in range(3, ceil(sqrt(number)), 2)):
+        if number % i == 0:
             return False
     return True
 
 
 def gives_answer_question():
     question = random.randint(MIN, MAX)
-    return str(question), 'yes' if is_simply(question) else 'no'
+    answer = 'yes' if is_prime(question) else 'no'
+    return str(question), answer
