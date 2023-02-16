@@ -13,8 +13,9 @@ def generates_progression(start, finish, step):
 
 
 def gives_answer_question():
-    hidden_position = random.randint(0, PROGRESSION_LENGTH - 2)
+    hidden_position = random.randint(0, PROGRESSION_LENGTH - 1)
     step = random.randint(MIN, MAX)
+    step = 1 if step == 0 else step
     start = random.randint(MIN, MAX)
     finish = start + step * PROGRESSION_LENGTH
     progression = generates_progression(start, finish, step)
