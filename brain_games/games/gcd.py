@@ -4,7 +4,7 @@ import math
 
 MIN = 1
 MAX = 1000
-RULES = 'Find the greatest common divisor of given numbers.'
+RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def finds_gcd(numeric_a, numeric_b):  # Находит наибольший делитель

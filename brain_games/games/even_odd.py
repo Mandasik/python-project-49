@@ -1,15 +1,16 @@
-import secrets
+from random import randint
 
 
+MIN = -99999999999
 MAX = 999999999999
-RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def checks_even_odd(numeric):  # Проверяет чётное ли число
-    return numeric, numeric % 2 == 0
+def checks_even_odd(number):
+    return number % 2 == 0
 
 
 def gives_answer_question():
-    numeric = secrets.randbelow(MAX)
-    question, answer = checks_even_odd(numeric)
+    question = randint(MIN, MAX)
+    answer = checks_even_odd(question)
     return question, 'yes' if answer else 'no'

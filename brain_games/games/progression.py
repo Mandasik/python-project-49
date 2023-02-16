@@ -3,7 +3,7 @@ import random
 
 MIN = -99
 MAX = 99
-RULES = 'What number is missing in the progression?'
+RULE = 'What number is missing in the progression?'
 
 
 def random_generation():
