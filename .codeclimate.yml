@@ -56,7 +56,7 @@ exclude_patterns:
 - "dist/"
 - "features/"
 - "**/node_modules/"
-- "scripts/"
+- "brain_games/scripts/"
 - "**/spec/"
 - "**/test/"
 - "**/tests/"
