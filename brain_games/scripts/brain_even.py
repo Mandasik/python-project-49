@@ -4,7 +4,7 @@ from brain_games.games import even_odd
 
 
 def main():
-    game_engine.calls_game(even_odd)
+    game_engine.run_game_in_engine(even_odd)
 
 
 if __name__ == '__main__':

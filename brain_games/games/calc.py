@@ -16,8 +16,8 @@ def calculate(number_a, number_b, operation):
 def gives_answer_question():
     number_a = random.randint(MIN, MAX)
     number_b = random.randint(MIN, MAX)
-    simbol = random.choice(list(COMPARISON.keys()))
-    operation = COMPARISON[simbol]
+    symbol = random.choice(list(COMPARISON.keys()))
+    operation = COMPARISON[symbol]
     answer = str(calculate(number_a, number_b, operation))
-    question = f'{number_a} {simbol} {number_b}'
+    question = f'{number_a} {symbol} {number_b}'
     return question, answer

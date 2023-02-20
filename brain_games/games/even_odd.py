@@ -13,4 +13,4 @@ def is_even(number):
 def gives_answer_question():
     question = randint(MIN, MAX)
     answer = 'yes' if is_even(question) else 'no'
-    return question, answer
+    return str(question), answer
