@@ -11,9 +11,10 @@ def is_prime(number):
     if number <= 1 or number != 2 and number % 2 == 0 \
             or number != 3 and number % 3 == 0:
         return False
-    for i in (
-            divider for divider in range(4, ceil(sqrt(number)))
-            if divider % 2 != 0 or divider % 3 != 0):
+    gen_prime = (
+        divider for divider in range(4, ceil(sqrt(number)))
+        if divider % 2 != 0 or divider % 3 != 0)
+    for i in gen_prime:
         if number % i == 0:
             return False
     return True
